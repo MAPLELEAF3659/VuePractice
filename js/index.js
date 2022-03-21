@@ -1,7 +1,18 @@
 Vue.createApp({
     data() {
         return {
-            message: "Hello Vue!"
+            price: 100,
+            quantity: 5
+        }
+    },
+    computed: {
+        sumAll: function() {
+            return this.price * this.quantity;
+        }
+    },
+    methods: {
+        total: function() {
+            return this.price * this.quantity;
         }
     }
 }).mount("#app")
