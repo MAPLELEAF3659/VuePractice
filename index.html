@@ -13,16 +13,33 @@
 
 <body>
     <div class="container">
-        <div class="row header">
-            <div class="col-2 header-logo">LOGO</div>
+        <div class="row header justify-content-around">
+            <div class="col-3 header-logo">
+                <h1>Happy Vue</h1>
+            </div>
             <div class="col space"></div>
-            <div class="col-2 header-login"><button type="button" class="btn btn-primary header-login-btn">Login</button></div>
+            <div class="col-1 header-login"><button type="button" class="btn btn-primary header-login-btn">Login</button></div>
         </div>
-        <div class="row">
-            <div class="col" id="app">
+        <div class="row sum">
+            <div class="col sum-title">
+                <h3>Computed & Methods Test</h3>
+            </div>
+            <div class="col sum-text" id="app">
                 <p>共{{sumAll}}元</p>
                 <p>共{{sumAll}}元</p>
                 <p>共{{sumAll}}元</p>
+            </div>
+        </div>
+        <div class="row converter">
+            <div class="col converter-title">
+                <h3>幣值轉換(以台幣為準)</h3>
+            </div>
+            <div class="col converter-item" id="converter">
+                <!-- <h4 class="converter-item-twd">台幣<input type="number" v-model="twd" v-on:input="twd2jpy"></h4>
+                <h4 class="converter-item-twd">日幣<input type="number" v-model="jpy" v-on:input="jpy2twd"></h4> -->
+                <h4 class="converter-item-twd">台幣<input type="number" v-model="twd"></h4>
+                <h4 class="converter-item-twd">日幣<input type="number" v-model="jpy"></h4>
+                <h4 class="converter-item-twd">美元<input type="number" v-model="usd"></h4>
             </div>
         </div>
     </div>
