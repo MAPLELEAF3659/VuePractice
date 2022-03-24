@@ -56,7 +56,17 @@ Vue.createApp({
         return {
             message: "Hello",
             multilineMessage: "",
-            picked: "Apple"
+            picked: "Apple",
+            checkedNums: [],
+            placeSelected: ""
         }
     }
 }).mount("#form")
+
+Vue.createApp({
+    data() {
+        return {
+
+        }
+    }
+})
