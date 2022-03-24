@@ -16,6 +16,7 @@ Vue.createApp({
         }
     }
 }).mount("#app")
+
 Vue.createApp({
     data() {
         return {
@@ -49,3 +50,13 @@ Vue.createApp({
         }
     }
 }).mount("#converter")
+
+Vue.createApp({
+    data() {
+        return {
+            message: "Hello",
+            multilineMessage: "",
+            picked: "Apple"
+        }
+    }
+}).mount("#form")

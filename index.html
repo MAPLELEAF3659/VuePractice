@@ -42,6 +42,23 @@
                 <h4 class="converter-item-twd">美元<input type="number" v-model="usd"></h4>
             </div>
         </div>
+        <div class="row form" id="form">
+            <div class="col form-title">
+                <h3>表單</h3>
+            </div>
+            <div class="col form-item">
+                <input type="text" v-model="message" placeholder="edit me">
+                <p><span>Your message is:</span>{{message}}</p>
+                <textarea name="multilineMessage" id="" cols="30" rows="10" v-model="multilineMessage"></textarea>
+                <p><span>Your multiline message is:</span>{{multilineMessage}}</p>
+                <h4>Pick a fruit:</h4>
+                <input type="radio" id="form-radio1" value="Apple" v-model="picked">
+                <label for="form-radio1">Apple</label>
+                <input type="radio" id="form-radio2" value="Banana" v-model="picked">
+                <label for="form-radio2">Banana</label>
+                <p><span>You picked :</span>{{picked}}</p>
+            </div>
+        </div>
     </div>
 
     <script src="js/index.js"></script>
