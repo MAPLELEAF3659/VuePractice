@@ -66,7 +66,14 @@ Vue.createApp({
 Vue.createApp({
     data() {
         return {
-
+            num1: 0,
+            num2: 0,
+            count: 0
+        }
+    },
+    computed: {
+        sum() {
+            return this.num1 + this.num2;
         }
     }
-})
+}).mount("#calculator")
